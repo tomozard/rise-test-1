@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+.productlists {
+  flex: 1;
+  border-right: 1px solid #666;
+  padding: 1rem;
+}
+.productlists p,
+.cartItem p {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+.cartlists {
+  padding: 1rem;
+  width: 300px;
+}
+.clear {
+  clear: both;
+}
+
+#productListsContainter {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 1em;
+}
+
+.productLists {
+  padding: 1rem;
+  float: left;
+  border: 1px solid #666;
+}
+
+#cartListsContainter {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.cartItem {
+  padding: 1rem;
+  float: left;
+  border: 1px solid #666;
+}
+
+#memberArea {
+  padding: 0.5rem 0;
+}
+
+#totalPrice {
+  padding: 0.5rem 0;
+}
