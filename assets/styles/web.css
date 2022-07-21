@@ -207,6 +207,10 @@ li.logout {
   display: none;
 }
 
+#hambergerMenu {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 1.6rem;
@@ -251,6 +255,10 @@ li.logout {
     padding: 0.25rem 1rem;
   }
 
+  #hambergerMenu {
+    display: block;
+  }
+
   .logout .img-logo {
     height: 36px;
   }
@@ -259,7 +267,7 @@ li.logout {
     display: none;
   }
 
-  li.logout{
+  li.logout {
     display: block;
   }
 
