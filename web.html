@@ -22,7 +22,7 @@
             ><img src="assets/imgs/logo-full.png" class="img-logo"
           /></a>
         </div>
-        <nav>
+        <nav id="navigate">
           <ul>
             <li>
               <a href="#">Explore product</a>
@@ -33,6 +33,12 @@
             <li>
               <a href="#">Pricing</a>
             </li>
+            <li class="logout">
+              <a href="#"
+                >Logout
+                <img src="assets/imgs/profile.png" height="24" class="mx-2" />
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="logout">
@@ -42,6 +48,10 @@
             <img src="assets/imgs/down-arrow.png" height="12"
           /></a>
         </div>
+        <div class="hamberger" id="hambergerMenu">
+          <img src="assets/imgs/menu.png" />
+        </div>
+        <!-- <div class="mobilemenu"></div> -->
       </div>
     </header>
     <div class="body">
@@ -150,10 +160,7 @@
           <ul>
             <li>
               <a href="#"
-                ><img
-                  src="assets/imgs/logo-alone.png"
-                  class="img-logo"
-                />
+                ><img src="assets/imgs/logo-alone.png" class="img-logo" />
               </a>
             </li>
             <li>
@@ -194,4 +201,11 @@
       </div>
     </footer>
   </body>
+  <script>
+    const hambergerMenu = document.getElementById("hambergerMenu");
+    hambergerMenu.addEventListener("click", () => {
+      const nav = document.getElementById("navigate");
+      nav.classList.toggle("show");
+    });
+  </script>
 </html>

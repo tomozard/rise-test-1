@@ -30,7 +30,7 @@ header .wrapper {
 header .wrapper ul li a {
   text-decoration: none;
   padding: 0 1rem;
-  display: block;
+  display: flex;
   line-height: 36px;
   color: #000;
 }
@@ -203,6 +203,10 @@ img.responsive {
   flex: 1;
 }
 
+li.logout {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 1.6rem;
@@ -223,13 +227,42 @@ img.responsive {
   header nav {
     display: none;
   }
+
+  header nav.show {
+    position: absolute;
+    height: auto;
+    top: 53px;
+    margin-left: -1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+  }
+
+  header .wrapper ul {
+    display: block;
+  }
+
+  header .wrapper ul li {
+    float: none;
+    height: auto;
+  }
+  header .wrapper ul li a {
+    padding: 0.25rem 1rem;
+  }
+
   .logout .img-logo {
     height: 36px;
   }
 
-  header .logout {
+  div.logout {
     display: none;
   }
+
+  li.logout{
+    display: block;
+  }
+
   .hero {
     flex-direction: column-reverse;
     padding-top: 1rem;
@@ -279,7 +312,7 @@ img.responsive {
   footer .img-logo {
     height: 50px;
   }
-  
+
   footer .sitemap {
     padding-top: 1rem;
   }
