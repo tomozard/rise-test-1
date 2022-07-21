@@ -202,10 +202,13 @@
     </footer>
   </body>
   <script>
-    const hambergerMenu = document.getElementById("hambergerMenu");
-    hambergerMenu.addEventListener("click", () => {
+    const hambergerMenuAction = (evt) => {
+      evt.preventDefault();
       const nav = document.getElementById("navigate");
       nav.classList.toggle("show");
-    });
+    };
+    const hambergerMenu = document.getElementById("hambergerMenu");
+    hambergerMenu.addEventListener("click", hambergerMenuAction);
+    hambergerMenu.addEventListener("touchstart", hambergerMenuAction);
   </script>
 </html>
