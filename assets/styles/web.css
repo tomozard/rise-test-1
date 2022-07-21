@@ -1,0 +1,290 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sarabun", sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1rem;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+header .wrapper ul li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  display: block;
+  line-height: 36px;
+  color: #000;
+}
+
+.logout a {
+  display: flex;
+  align-items: center;
+}
+
+.logout .img-logo {
+  height: 32px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+
+footer .img-logo {
+  height: 36px;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+header .wrapper ul,
+footer .wrapper ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .wrapper ul li,
+footer .wrapper ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  height: 36px;
+}
+
+footer .wrapper ul li a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  display: block;
+  line-height: 36px;
+  color: #000;
+}
+
+.body {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hero {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 4;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.hero-img {
+  flex: 4;
+}
+
+.features {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: #f3f3f3f3;
+}
+
+.features-text {
+  max-width: 650px;
+  margin: auto;
+}
+
+.features-lists {
+  /* margin: auto;
+  max-width: 860px; */
+  display: flex;
+}
+
+.features-cards {
+  flex: 1;
+}
+
+.features-cards p {
+  padding: 0 1rem;
+}
+
+.features-cards p b {
+  font-weight: bold;
+}
+
+.description {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #fff;
+  background-image: url("../imgs/power-up-1.png");
+  background-size: contain;
+}
+.description h1 {
+  margin-bottom: 2rem;
+}
+
+.description p {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img.responsive {
+  max-width: 100%;
+}
+
+.more {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f3f3f3f3;
+}
+
+.more-lists {
+  /* margin: auto;
+  max-width: 860px; */
+  display: flex;
+  gap: 1.2rem;
+}
+
+.more-lists .more-cards {
+  flex: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .body {
+    padding-bottom: 0;
+  }
+  header nav {
+    display: none;
+  }
+  .logout .img-logo {
+    height: 36px;
+  }
+
+  header .logout {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .features-lists {
+    flex-direction: column;
+  }
+  .features-cards {
+    padding: 1rem;
+  }
+  .more {
+    padding: 0;
+  }
+
+  .more .wrapper {
+    padding: 0;
+  }
+
+  .more .more-lists {
+    flex-direction: column;
+  }
+  .more-cards h2 {
+    padding: 1rem 1rem 0.5rem;
+  }
+  .more-cards p {
+    padding: 0 1rem 2rem;
+  }
+  footer {
+    position: initial;
+  }
+  footer .wrapper {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  footer .wrapper .sitemap ul {
+    display: block;
+  }
+
+  footer .wrapper .sitemap ul li {
+    float: none;
+    height: auto;
+  }
+
+  footer .img-logo {
+    height: 50px;
+  }
+  
+  footer .sitemap {
+    padding-top: 1rem;
+  }
+
+  footer .socialmedia {
+    padding: 1rem 0;
+  }
+}
